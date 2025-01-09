@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="keywords"
+        content="Cookies Policy, Privacy Policy, Website Cookies, Cookie Settings, Session Cookies, Persistent Cookies, Manage Cookies, Domain, Online Services, Data Protection, User Privacy, Website Policy">
+    <meta name="description"
+        content="Read our Cookies Policy to learn how Domain uses cookies to enhance your browsing experience. Understand the types of cookies we use, their purpose, and how to manage your preferences.">
+    <title>Domain</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="/">
+                <span>Domain</span>
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="/#about">About Us</a>
+            <a href="/game/">Games</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+        <button class="login-button" id="loginBtn">LOGIN</button>
+        <button class="burger-menu" id="burgerMenu">☰</button>
+    </header>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit" class="login-submit">LOGIN</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message">
+        Access to games granted
+    </div>
+
+    <script>
+        document.getElementById('burgerMenu').addEventListener('click', function () {
+            document.querySelector('.header').classList.toggle('active');
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            document.getElementById('loginModal').style.display = 'flex';
+        });
+
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('loginModal').style.display = 'none';
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+
+    </script>
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <h3 class="cookie-title">Cookie Policy</h3>
+            <p class="cookie-description">We use cookies to enhance your experience on our website. By continuing to use
+                our website, you agree to our use of cookies. Learn more about our cookie policy.</p>
+            <p class="cookie-info">Cookies are small text files that are stored on your device. These cookies help us
+                analyze website traffic, personalize content, and improve your user experience. For more details, please
+                visit our <a href="/privacy">Privacy Policy</a>.</p>
+        </div>
+        <button class="close-btn">Got it!</button>
+    </div>
+
+
+    <script>
+        document.querySelector('.close-btn').addEventListener('click', function () {
+            document.querySelector('.cookie-banner').style.display = 'none';
+        });
+    </script>
+    <section class="terms-conditions">
+        <div class="container">
+            <h1>Terms and Conditions</h1>
+            <h2>1. Interpretation and Definitions</h2>
+            <h3>Interpretation</h3>
+            <p>Capitalized terms have specific meanings as defined here. Singular and plural forms hold the same meaning
+                unless otherwise specified.</p>
+
+            <h3>Definitions</h3>
+            <ul>
+                <li><b>Affiliate:</b> Any entity under shared ownership or control with the Company.</li>
+                <li><b>Country:</b> Medicine Hat, AB T1A 0H5, Canada.</li>
+                <li><b>Company:</b> Referred to as "the Company," "We," "Us," or "Our," located at 640 3rd St SE #267,
+                    Medicine Hat, AB T1A 0H5, Canada.</li>
+                <li><b>Device:</b> Any device such as a computer, phone, or tablet that can access our Service.</li>
+                <li><b>Service:</b> The Website.</li>
+                <li><b>Terms and Conditions:</b> These rules govern your usage of our Service.</li>
+                <li><b>Third-party Social Media Service:</b> Services or content from third parties displayed through
+                    the Service.</li>
+                <li><b>Website:</b> Refers to Domain, accessible at <a
+                        href="https://www.domain.com">https://www.domain.com</a>.</li>
+                <li><b>You:</b> Refers to the individual using our Service or the entity they represent.</li>
+            </ul>
+
+            <h2>2. Acknowledgment</h2>
+            <p>These Terms govern your use of our Service, outlining rights and responsibilities for all users. By
+                accessing our Service, you agree to comply with these Terms.</p>
+            <p>Users under 18 are not permitted to use the Service.</p>
+
+            <h2>3. Links to Other Websites</h2>
+            <p>Our Service may include links to third-party websites. We are not responsible for their content or
+                policies. Please review their terms before engaging.</p>
+
+            <h2>4. Termination</h2>
+            <p>Your access may be terminated immediately for violating these Terms. After termination, you cannot use
+                our Service.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>The Company's liability is limited to the amount you paid or $100 if no payment was made. Consequential
+                damages are excluded to the extent permitted by law.</p>
+
+            <h2>6. "AS IS" Disclaimer</h2>
+            <p>The Service is provided "as is" with no warranties. The Company is not liable for errors, interruptions,
+                or harmful elements such as viruses.</p>
+
+            <h2>7. Governing Law</h2>
+            <p>The laws of Canada govern these Terms, excluding conflict of law principles.</p>
+
+            <h2>8. Disputes Resolution</h2>
+            <p>Contact us first to resolve any issues informally.</p>
+
+            <h2>9. Changes to Terms</h2>
+            <p>We may update these Terms. Continued use of the Service implies agreement to changes.</p>
+
+            <h2>Contact Us</h2>
+            <p>For questions, reach out:</p>
+            <ul>
+                <li>Email: contact@domain.com</li>
+                <li>Website: <a href="https://www.domain.com/contact">https://www.domain.com/contact</a></li>
+                <li>Phone: +1 403-219-0189</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Logo and Description -->
+                <div class="footer__section footer__about">
+                    <h2 class="footer__logo">Domain</h2>
+                    <p>
+                        Domain, your premier platform for discovering and enjoying a diverse range of free social web
+                        games. We connect gaming enthusiasts with top-tier gaming experiences without any financial
+                        risk.
+                    </p>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-envelope"></i> Info@domain.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i> +1 403–219–0189
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 640 3rd St SE #267, Medicine Hat, AB T1A 0H5, Canada
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div class="footer__section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/#why">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3>Games</h3>
+                    <ul>
+                        <li><a href="/game">Games Collection</a></li>
+                        <li><a href="/games/games.html?game=sweet">Sweet Bonanza</a></li>
+                        <li><a href="/games/games.html?game=gates">Gates of Olympus</a></li>
+                        <li><a href="/games/games.html?game=dog">The Dog House</a></li>
+                        <li><a href="/games/games.html?game=hand">Hand of Midas</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/cookies">Cookies Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Copyright © 2025 <span class="footer__brand">Domain LLC</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

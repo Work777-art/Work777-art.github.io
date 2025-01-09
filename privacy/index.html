@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="keywords"
+        content="Cookies Policy, Privacy Policy, Website Cookies, Cookie Settings, Session Cookies, Persistent Cookies, Manage Cookies, Domain, Online Services, Data Protection, User Privacy, Website Policy">
+    <meta name="description"
+        content="Read our Cookies Policy to learn how Domain uses cookies to enhance your browsing experience. Understand the types of cookies we use, their purpose, and how to manage your preferences.">
+    <title>Domain</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="/">
+                <span>Domain</span>
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="/#about">About Us</a>
+            <a href="/game/">Games</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+        <button class="login-button" id="loginBtn">LOGIN</button>
+        <button class="burger-menu" id="burgerMenu">☰</button>
+    </header>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit" class="login-submit">LOGIN</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message">
+        Access to games granted
+    </div>
+
+    <script>
+        document.getElementById('burgerMenu').addEventListener('click', function () {
+            document.querySelector('.header').classList.toggle('active');
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            document.getElementById('loginModal').style.display = 'flex';
+        });
+
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('loginModal').style.display = 'none';
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+
+    </script>
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <h3 class="cookie-title">Cookie Policy</h3>
+            <p class="cookie-description">We use cookies to enhance your experience on our website. By continuing to use
+                our website, you agree to our use of cookies. Learn more about our cookie policy.</p>
+            <p class="cookie-info">Cookies are small text files that are stored on your device. These cookies help us
+                analyze website traffic, personalize content, and improve your user experience. For more details, please
+                visit our <a href="/privacy">Privacy Policy</a>.</p>
+        </div>
+        <button class="close-btn">Got it!</button>
+    </div>
+
+
+    <script>
+        document.querySelector('.close-btn').addEventListener('click', function () {
+            document.querySelector('.cookie-banner').style.display = 'none';
+        });
+    </script>
+    <section class="privacy-policy">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>This Privacy Policy explains how we collect, use, and share your information when you use our Service, as
+                well as your rights to privacy and how the law protects you.</p>
+
+            <h2>1. Definitions</h2>
+            <ul>
+                <li><b>Account:</b> A unique profile created to access our Service.</li>
+                <li><b>Affiliate:</b> An entity that is under shared control with the Company.</li>
+                <li><b>Company:</b> Referred to as "We," "Us," or "Our," located at 640 3rd St SE #267, Medicine Hat, AB
+                    T1A 0H5, Canada.</li>
+                <li><b>Cookies:</b> Small files placed on your device to track browsing history and preferences.</li>
+                <li><b>Country:</b> Medicine Hat, AB T1A 0H5, Canada.</li>
+                <li><b>Device:</b> Any device capable of accessing the Service, such as a computer or phone.</li>
+                <li><b>Personal Data:</b> Any information that identifies an individual.</li>
+                <li><b>Service:</b> The Website.</li>
+                <li><b>Service Provider:</b> A third-party entity assisting the Company in providing services.</li>
+                <li><b>Website:</b> Refers to Domain, accessible at <a
+                        href="https://www.domain.com">https://www.domain.com</a>.</li>
+                <li><b>You:</b> The individual using the Service or the entity on whose behalf the Service is used.</li>
+            </ul>
+
+            <h2>2. Data Collection</h2>
+            <p>We may collect the following data:</p>
+            <ul>
+                <li><b>Personal Data:</b> Name, email address, and usage details.</li>
+                <li><b>Usage Data:</b> Information like IP address, browser type, and visit duration.</li>
+            </ul>
+
+            <h2>3. Cookies</h2>
+            <p>We use cookies to improve our Service. You can manage cookie preferences in your browser settings. Learn
+                more in our <a href="#">Cookies Policy</a>.</p>
+
+            <h2>4. How We Use Your Data</h2>
+            <ul>
+                <li>To provide and maintain our Service.</li>
+                <li>To manage your Account.</li>
+                <li>To contact you with updates or offers.</li>
+                <li>To analyze Service usage for improvements.</li>
+            </ul>
+
+            <h2>5. Data Retention</h2>
+            <p>Your data is retained only as long as necessary for our purposes or to comply with legal obligations.</p>
+
+            <h2>6. Your Rights</h2>
+            <p>You have the right to access, update, or delete your Personal Data. Contact us for assistance.</p>
+
+            <h2>7. Security</h2>
+            <p>We strive to protect your data, but no method of transmission over the Internet is completely secure.</p>
+
+            <h2>8. Links to Other Websites</h2>
+            <p>Our Service may contain links to third-party websites. We are not responsible for their content or
+                privacy practices.</p>
+
+            <h2>9. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy. Changes are effective when posted on this page.</p>
+
+            <h2>10. Contact Us</h2>
+            <p>If you have questions, contact us:</p>
+            <ul>
+                <li>Email: contact@domain.com</li>
+                <li>Website: <a href="https://www.domain.com/contact">https://www.domain.com/contact</a></li>
+                <li>Phone: +1 403-219-0189</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Logo and Description -->
+                <div class="footer__section footer__about">
+                    <h2 class="footer__logo">Domain</h2>
+                    <p>
+                        Domain, your premier platform for discovering and enjoying a diverse range of free social web
+                        games. We connect gaming enthusiasts with top-tier gaming experiences without any financial
+                        risk.
+                    </p>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-envelope"></i> Info@domain.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i> +1 403–219–0189
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 640 3rd St SE #267, Medicine Hat, AB T1A 0H5, Canada
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div class="footer__section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/#why">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3>Games</h3>
+                    <ul>
+                        <li><a href="/game">Games Collection</a></li>
+                        <li><a href="/games/games.html?game=sweet">Sweet Bonanza</a></li>
+                        <li><a href="/games/games.html?game=gates">Gates of Olympus</a></li>
+                        <li><a href="/games/games.html?game=dog">The Dog House</a></li>
+                        <li><a href="/games/games.html?game=hand">Hand of Midas</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/cookies">Cookies Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Copyright © 2025 <span class="footer__brand">Domain LLC</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
